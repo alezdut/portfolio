@@ -24,3 +24,14 @@
     font-size: small;
     color: rgb(39, 39, 39);
 }
+.profile__maincard{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content__maincard{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
