@@ -14,7 +14,18 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Modal from '@material-ui/core/Modal';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
-import "./Head.css"
+import "./Head.css";
+import obj from "./key.js";
+require("dotenv").config();
+
+var { api_key, domain } = obj;
+console.log(api_key);
+console.log(domain);
+console.log(process.env)
+const mailgun = require("mailgun-js");
+const mg = mailgun({ apiKey: api_key, domain: domain });
+console.log(mg)
+
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -50,7 +61,26 @@ const useStyles = makeStyles((theme) => ({
 export default function Head() {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
+    const [message, setMesage] = useState('');
 
+    const data = {
+        from: 'CONTACTO PORTFOLIO <alejandrozdut@gmail.com>',
+        to: 'ale77rock@gmail.com',
+        subject: 'reclutador',
+        text: message
+    };
+
+    const handleClick = () => {
+        mg.messages().send(data, function (error, body) {
+            console.log(body)
+        });
+        handleClose();
+    }
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        setMesage(e.target.value);
+    }
 
     const handleOpen = () => {
         setOpen(true);
@@ -140,21 +170,24 @@ export default function Head() {
                                 </div>
                                 <div>
                                     <p className="tit__head">¿Sobre que quieres hablar?</p>
-                                    <TextField
-                                        id="filled-full-width"
-                                        style={{ margin: 8 }}
-                                        placeholder="Enviar mensaje"
-                                        helperText="su mensaje sera enviado a mi casilla de correo alejandrozdut@gmail.com"
-                                        fullWidth
-                                        margin="normal"
-                                        InputLabelProps={{
-                                            shrink: false,
-                                        }}
-                                        variant="outlined"
-                                    />
+                                    <form onChange={handleChange}>
+                                        <TextField
+                                            id="filled-full-width"
+                                            style={{ margin: 8 }}
+                                            placeholder="Enviar mensaje"
+                                            helperText="su mensaje sera enviado a mi casilla de correo alejandrozdut@gmail.com"
+                                            fullWidth
+                                            margin="normal"
+                                            InputLabelProps={{
+                                                shrink: false,
+                                            }}
+                                            variant="outlined"
+                                        />
+                                    </form>
+
                                 </div>
                                 <div className="button__head">
-                                    <Button variant="contained" color="primary">
+                                    <Button variant="contained" color="primary" onClick={handleClick}>
                                         Enviar
                                     </Button>
                                 </div>

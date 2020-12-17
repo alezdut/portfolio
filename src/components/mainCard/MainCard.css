@@ -1,7 +1,7 @@
 .main__mainCard{
     width: 600px;
-    height: 600px;
     display: flex;
+    flex-grow: inherit;
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid rgb(228, 228, 228);
@@ -34,4 +34,8 @@
     margin-top: -30px;
     color: rgb(39, 39, 39);
     text-decoration: none;
+}
+.imagen__maincard{
+    max-width: 550px;
+    
 }

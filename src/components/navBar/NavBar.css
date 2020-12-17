@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 .box__nav{
     max-width: 1200px;
@@ -57,6 +58,7 @@
     align-items: center;
     margin-left: 30px;
     font-size: small;
+    
 }
 .inicio__red{
     display: flex;

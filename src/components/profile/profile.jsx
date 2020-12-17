@@ -1,11 +1,16 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import portada from "../../resources/images/articleocw-5d07e6b3790af.jpg";
+import portada from "../../resources/images/portada2.jpeg";
 import perfil from "../../resources/images/TPRS7H4PN-U015Z6CG1AS-ea48690b9144-512.png"
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
-import "./profile.css"
+import "./profile.css";
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function Profile() {
+export default function Profile(props) {
     const classes = useStyles();
 
     return (
@@ -45,7 +50,7 @@ export default function Profile() {
                         </a>
                     </div>
                     <div className="info__profile">
-                        <p classNam="subtitle__profile">
+                        <p className="subtitle__profile">
                             Fullstack developer | React |<br />
                             Javascript | SQl | MongoDB | HTML | CSS
                         </p>
@@ -55,7 +60,7 @@ export default function Profile() {
             <Divider />
             <div className="links__profile">
                 <div className="link__profile">
-                    <p>Proyectos personales</p>
+                    <p onClick={props.yo}>Ver Curriculum</p>
                     <p>Visualizaciones de tu perfil</p>
                 </div>
                 <div>
@@ -64,12 +69,32 @@ export default function Profile() {
             </div>
             <Divider />
             <div className="icono__profile">
-                <div className="bookmark__profile">
+                {/* <div className="bookmark__profile">
                     <BookmarkIcon />
                 </div>
                 <div className="contacto__profile">
                     <a>contactar</a>
-                </div>
+                </div> */}
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<BookmarkIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography className={classes.heading}>Contactar</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            alejandrozdut@gmail.com
+
+                            linkedin.com/in/alezdut/
+
+                            github.com/alezdut/
+
+                            +543541623065
+                    </Typography>
+                    </AccordionDetails>
+                </Accordion>
             </div>
         </div>)
 }

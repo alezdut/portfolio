@@ -33,13 +33,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function NavBar() {
+export default function NavBar(props) {
     const classes = useStyles();
 
     return (
         <div className="main__nav">
             <div className="box__nav">
-                <div className="logo__nav">
+                <div className="logo__nav" onClick={props.close}>
                     <img className="img__nav" src={logo}></img>
                 </div>
                 <div className="search__nav">
@@ -53,7 +53,7 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className="icons__nav">
-                    <div className="inicio__nav">
+                    <div className="inicio__nav" onClick={props.close}>
                         <HomeIcon />
                         <a>Inicio</a>
                     </div>
@@ -61,7 +61,7 @@ export default function NavBar() {
                         <PeopleIcon />
                         <a>Mi red</a>
                     </div>
-                    <div className="inicio__empleos">
+                    <div className="inicio__empleos" onClick={props.yo}>
                         <WorkIcon />
                         <a>Empleos</a>
                     </div>
@@ -73,7 +73,7 @@ export default function NavBar() {
                         <NotificationsIcon />
                         <a>notificaciones</a>
                     </div>
-                    <div className="inicio__yo">
+                    <div className="inicio__yo" onClick={props.yo}>
                         <Avatar alt="Alejandro Zdut" src={perfil} className={classes.small} />
                         <a>yo</a>
                     </div>
