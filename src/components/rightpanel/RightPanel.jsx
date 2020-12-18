@@ -44,7 +44,7 @@ export default function RightPanel() {
                     </div>
                     <div className="button__rightpanel">
                         <AddIcon />
-                        <a href="https://github.com/alezdut/">Seguir</a>
+                        <a href="https://github.com/alezdut/" style={{ textDecoration: "none", color: "GrayText" }}>Seguir</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ export default function RightPanel() {
                     </div>
                     <div className="button__rightpanel">
                         <AddIcon />
-                        <a href="https://www.linkedin.com/in/alezdut/">Seguir</a>
+                        <a href="https://www.linkedin.com/in/alezdut/" style={{ textDecoration: "none", color: "GrayText" }}>Seguir</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ export default function RightPanel() {
                     </div>
                     <div className="button__rightpanel">
                         <AddIcon />
-                        <a href="https://www.hackerrank.com/alejandrozdut">Seguir</a>
+                        <a href="https://www.hackerrank.com/alejandrozdut" style={{ textDecoration: "none", color: "GrayText" }}>Seguir</a>
                     </div>
                 </div>
             </div>

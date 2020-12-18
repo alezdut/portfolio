@@ -175,7 +175,7 @@ export default function Head() {
                                             id="filled-full-width"
                                             style={{ margin: 8 }}
                                             placeholder="Enviar mensaje"
-                                            helperText="su mensaje sera enviado a mi casilla de correo alejandrozdut@gmail.com"
+                                            helperText="Si su mensaje es importante por favor enviarlo directamente desde su email"
                                             fullWidth
                                             margin="normal"
                                             InputLabelProps={{

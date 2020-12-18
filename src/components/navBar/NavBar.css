@@ -17,12 +17,12 @@
     margin-top: 5px;
     justify-content: flex-start;
     width: 50px;
+    cursor: pointer;
 }
 .img__nav{
     display: flex;
     justify-content: flex-start;
-    margin-top: 10px;
-    
+    margin-top: 10px; 
     height: 35px;
     width: 35px;
     border-radius: 5px;
@@ -50,7 +50,9 @@
     width: 600px;
     height: 50px;
     justify-content: flex-end;
+    color: rgb(78, 78, 78);
     margin-right: 30px;
+    
 }
 .inicio__nav{
     display: flex;
@@ -58,7 +60,7 @@
     align-items: center;
     margin-left: 30px;
     font-size: small;
-    
+    cursor: pointer;
 }
 .inicio__red{
     display: flex;
@@ -73,6 +75,7 @@
     align-items: center;
     margin-left: 30px;
     font-size: small;
+    cursor: pointer;
 }
 .inicio__mensajes{
     display: flex;
@@ -94,6 +97,7 @@
     align-items: center;
     margin-left: 30px;
     font-size: small;
+    cursor: pointer;
 }
 .avatar__nav{
     margin-top: 10px;
