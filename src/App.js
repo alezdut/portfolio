@@ -13,15 +13,27 @@ import About from './components/Resume/About';
 var arr = [{
   nombre: "Mi mama",
   sub: "recomienda esto",
-  text: `Hola! bienvenido a mi Portfolio, aqui podras ver algunos de mis trabajos.`,
+  text: `Hola! bienvenido a mi Portfolio, aqui puedes ver mis proyectos y mi Curriculum haciendo click en la pestaña "yo".`,
   subtext: `ESTO NO ES LINKEDIN! no te confundas! arme esta pagina desde 0 en react, los estilos son mayormente en CSS pero tambien use Material UI.`,
   saludo: `Si te interesa podes ver el codigo en mi github "https://github.com/alezdut/" junto con el codigo de mis otros proyectos. Gracias por tu visita!`,
   reactions: "11·5 comentarios 885 Visualizaciones"
 }, {
+  nombre: "A Marcos",
+  sub: "le interesa esto",
+  text: `Este proyecto lo realize como challenge para una plataforma, es una aplicacion para llevar control de gastos personales,
+  permite que el usuario se registre y almacena las transacciones tanto entrantes como salientes, asi como un balance. Ademas permite filtrar
+  las operaciones por categorias. Se utilizaron
+  las siguientes tecnologias: React, PostgreSQL, Sequelize, Material UI, NodeJS y ExpressJS.`,
+  subtext: "Un proyecto muy entretenido, realizado en solo 48hs.",
+  saludo: "Si quieres ver el codigo puedes ingresar al siguiente link",
+  img: "https://raw.githubusercontent.com/alezdut/finance-app/master/images/2.jpg",
+  link: "https://github.com/alezdut/finance-app",
+  reactions: "10·8 comentarios 569 Visualizaciones"
+}, {
   nombre: "A Eren",
   sub: "le interesa esto",
   text: `Esta plataforma de e-learning la realizamos junto a mis compañeros como proyecto final, se utilizaron
-  las siguientes tecnologias: React, Redux, MongoDB, mongoose, Material UI, NodeJS y ExpressJS`,
+  las siguientes tecnologias: React, Redux, MongoDB, mongoose, Material UI, NodeJS y ExpressJS.`,
   subtext: "Realmente fue un proyecto desafiante dado el poco tiempo (20 dias) pero nos sentimos conformes con el resultado, ademas que nos permitio afianzar conocimientos.",
   saludo: "Si te interesa saber mas puedes ingresar al link para ver el proyecto completo",
   img: "https://raw.githubusercontent.com/alezdut/HenryApp/master/Readme_images/module.jpg",
