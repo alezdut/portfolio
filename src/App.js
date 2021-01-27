@@ -25,7 +25,7 @@ var arr = [{
   las operaciones por categorias. Se utilizaron
   las siguientes tecnologias: React, PostgreSQL, Sequelize, Material UI, NodeJS y ExpressJS.`,
   subtext: "Un proyecto muy entretenido, realizado en solo 48hs.",
-  saludo: "Si quieres ver el codigo puedes ingresar al siguiente link",
+  saludo: "Si quieres ver el codigo puedes ingresar al link",
   img: "https://raw.githubusercontent.com/alezdut/finance-app/master/images/2.jpg",
   link: "https://github.com/alezdut/finance-app",
   reactions: "10·8 comentarios 569 Visualizaciones"
@@ -52,7 +52,7 @@ var arr = [{
   nombre: "A Ale",
   sub: "le encanta esto",
   text: `Después de empezar este año lleno de dudas, teniendo que cerrar mi local de computación, apareció esta oportunidad en mi camino y decidí aprovecharla, hoy estoy muy feliz de haber completado el bootcamp, contar con conocimientos y amigos nuevos, y sentirme listo para encarar una nueva etapa de mi vida.`,
-  img: "https://media-exp1.licdn.com/dms/image/C4E22AQHb1WTVRchF5w/feedshare-shrink_1280-alternative/0/1606856614751?e=1611187200&v=beta&t=Q-kJ6X_CUYV_oNgWWDgEZrFN6bJPoh-tBgsKGPUYbUM",
+  img: "https://media-exp1.licdn.com/dms/image/C4E22AQHb1WTVRchF5w/feedshare-shrink_800/0/1606856614811?e=1614816000&v=beta&t=bHKLuCB8BZJpWWliUaPjMLUSMk4skqXRLPztdiVLrQg",
   reactions: "20·2 comentarios 456 Visualizaciones"
 }, {
   nombre: "A Ale",
